@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    //清除 移动端 a 标签 点击高亮显示
+    -webkit-tap-highlight-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+i,
+img {
+    vertical-align: middle;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.w-50{
+    width: 50%;
+}
+.w-100{
+    width: 100%;
+}
+.bl{
+    border-left: 1px solid #ccc;
+}
+.br{
+    border-right: 1px solid #ccc;
+}
+.bt{
+    border-top: 1px solid #ccc;
+}
+.bb{
+    border-bottom: 1px solid #ccc;
+}
+.center-block{
+    display: block;
+}
+// 移动端屏幕的分辨率比真实的设备要大 一般的大2 倍
+// 设计图是按照屏幕分辨率的大小来设计的 在真实设备里面是真实像素只有分别率的一半
+// 所以设计图在移动端使用的时候要缩小一倍的宽度来显示 400px 600px  200px 300px

@@ -1,0 +1,116 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#header {
+    background-image: url(../images/header-bg.png);
+    position: absolute;
+    height: 44px;
+    width: 100%;
+    >.icon-back {
+        width: 40px;
+        height: 44px;
+        padding: 12px 12px;
+        background-image: url(../images/sprites.png);
+        background-size: 200px 200px;
+        background-position: -24px 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-origin: content-box;
+        background-clip: content-box;
+    }
+    >form {
+        width: 100%;
+        padding: 5px 50px;
+        >input {
+            width: 100%;
+            border: 1px solid #ccc;
+            height: 30px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+    }
+    >.icon-menu {
+        width: 40px;
+        height: 44px;
+        padding: 12px 12px;
+        background-image: url(../images/sprites.png);
+        background-size: 200px 200px;
+        background-position: -60px 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-origin: content-box;
+        background-clip: content-box;
+    }
+}
+
+#cateory {
+    height: 100%;
+    padding-top: 44px;
+    .cateory-left {
+        width: 90px;
+        float: left;
+        height: 100%;
+        overflow: hidden;
+        >ul {
+            >li {
+                >a {
+                    width: 90px;
+                    height: 50px;
+                    display: block;
+                    line-height: 50px;
+                    text-align: center;
+                    background-color: #f3f4f5;
+                    border-bottom: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    font-size: 14px;
+                }
+                &.active {
+                    >a {
+                        color: #d8505c;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .cateory-right {
+        padding: 10px;
+        height: 100%;
+        overflow: hidden;
+        >a {
+            display: block;
+            >img {
+                width: 100%;
+            }
+        }
+        >.product {
+            margin-top: 10px;
+            >h5 {}
+            >ul {
+                >li {
+                    width: 33.33%;
+                    float: left;
+                    >a {
+                        text-align: center;
+                        display: block;
+                        >img {
+                            width: 55px;
+                            height: 55px;
+                        }
+                        >p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
